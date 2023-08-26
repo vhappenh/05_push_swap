@@ -6,7 +6,7 @@
 /*   By: vhappenh <vhappenh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/15 09:47:40 by vhappenh          #+#    #+#             */
-/*   Updated: 2023/08/26 11:50:28 by vhappenh         ###   ########.fr       */
+/*   Updated: 2023/08/26 11:51:50 by vhappenh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -61,6 +61,8 @@ int	ft_input_check(char **input)
 	int		j;
 
 	i = 0;
+	if (!input)
+		return (1);
 	while (input[i])
 	{
 		j = 0;
@@ -118,8 +120,6 @@ char	**ft_input_prepare(char **input)
 	if (input_joined == NULL)
 		return (NULL);
 	input_split = ft_split(input_joined, ' ');
-	if (input_split == NULL)
-		return (NULL);
 	if (ft_input_check(input_split))
 	{
 		ft_free_pushswap(NULL, input_split);
