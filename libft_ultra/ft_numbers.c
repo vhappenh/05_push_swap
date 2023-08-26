@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_numbers.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: vhappenh <vhappenh@student.42vienna.com>   +#+  +:+       +#+        */
+/*   By: vhappenh <vhappenh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/12 10:57:14 by vhappenh          #+#    #+#             */
-/*   Updated: 2022/12/03 10:05:16 by vhappenh         ###   ########.fr       */
+/*   Updated: 2023/08/26 11:50:40 by vhappenh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,7 +38,7 @@ int	ft_numbers(long input)
 	i = 1;
 	temp = input;
 	while ((temp / 10) != 0)
-	{	
+	{
 		temp = temp / 10;
 		i++;
 	}
